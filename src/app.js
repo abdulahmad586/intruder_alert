@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
+    console.log("Someone just made a request!");
     res.status(200).json({ msg: "Server is alive at " + new Date() });
 });
 
